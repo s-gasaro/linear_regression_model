@@ -1,4 +1,3 @@
-markdown
 # Marathon Finish Time Prediction
 
 ## Mission & Problem
@@ -24,33 +23,34 @@ The Flutter app is in `summative/FlutterApp/marathon_predictor` and sends reques
 
 1. Install [Flutter](https://docs.flutter.dev/get-started/install) and connect an Android emulator or a physical device with USB debugging enabled.
 2. From the project root, move into the app folder:
-
-cd summative/FlutterApp/marathon_predictor
-
+```
+   cd summative/FlutterApp/marathon_predictor
+```
 3. Install the dependencies:
-
-flutter pub get
-
+```
+   flutter pub get
+```
 4. Run the app:
-
-flutter run
-
+```
+   flutter run
+```
 5. Enter the runner's age, gender (M or F), and split times in minutes (5K, 10K, 15K, 20K, Half), then tap **Predict**. The predicted finish time appears below the button, and missing or out-of-range values show a clear error message.
 
 ## Project Structure
 
+```text
 linear_regression_model/
 └── summative/
-├── linear_regression/
-│ ├── multivariate.ipynb
-│ └── data/
-├── API/
-│ ├── prediction.py
-│ └── requirements.txt
-├── FlutterApp/
-│ └── marathon_predictor/
-└── pyproject.toml
-
+    ├── linear_regression/
+    │   ├── multivariate.ipynb
+    │   └── data/
+    ├── API/
+    │   ├── prediction.py
+    │   └── requirements.txt
+    ├── FlutterApp/
+    │   └── marathon_predictor/
+    └── pyproject.toml
+```
 
 ## Models
 Four regression models were built and compared with scikit-learn: SGD linear regression (gradient descent), OLS linear regression, a decision tree, and a random forest. The random forest gave the lowest test loss (MSE ≈ 121.7, RMSE ≈ 11 minutes) and is the model saved and served by the API.
