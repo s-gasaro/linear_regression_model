@@ -16,7 +16,7 @@ The prediction API is deployed on Render and documented with Swagger UI:
 > Note: the API runs on Render's free tier, so the first request after a period of inactivity can take up to a minute while the service wakes up.
 
 ## Video Demo
-**YouTube:** [Watch the demo](ADD_YOUR_YOUTUBE_LINK_HERE)
+**YouTube:** [Watch the demo](https://youtu.be/LmQszaKr5HQ)
 
 ## Running the Mobile App
 The Flutter app is in `summative/FlutterApp/marathon_predictor` and sends requests to the live API above.
