@@ -1,0 +1,6 @@
+summative/FlutterApp/marathon_predictor/ios/** linguist-vendored
+summative/FlutterApp/marathon_predictor/macos/** linguist-vendored
+summative/FlutterApp/marathon_predictor/linux/** linguist-vendored
+summative/FlutterApp/marathon_predictor/windows/** linguist-vendored
+summative/FlutterApp/marathon_predictor/web/** linguist-vendored
+summative/FlutterApp/marathon_predictor/android/** linguist-vendored
